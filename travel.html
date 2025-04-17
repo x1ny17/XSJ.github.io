@@ -7,10 +7,26 @@
     <title>北京</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="travel.css">
+    <style>
+        /* 强制布局核心样式 */
+        body {
+            min-width: 1200px;
+            overflow-x: auto;
+            zoom: 1;
+        }
+        .navbar, .page-header, main.container, footer .container {
+            width: 1200px !important;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            transform: none !important;
+        }
+    </style>
 </head>
 
-<body>
-    <nav class="navbar">
+<body style="min-width:1200px;overflow-x:auto;">
+    <!-- 导航栏固定尺寸 -->
+    <nav class="navbar" style="width:1200px;margin:0 auto;">
         <div class="container">
             <div class="logo">
                 <h1>寻诗记——北京</h1>
@@ -151,7 +167,9 @@
         </section>
     </main>
 
-    <footer>
+    
+    <!-- 页脚固定尺寸 -->
+    <footer style="width:1200px;margin:0 auto;">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
