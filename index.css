@@ -1,6 +1,6 @@
 .hero {
     height: 600px;
-    background-image: url('../img/nanjing_004.jpg');
+    background-image: url('nanjing_004.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
