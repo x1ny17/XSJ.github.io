@@ -6,8 +6,8 @@
     <!-- 锁定视口禁止缩放 -->
     <meta name="viewport" content="width=1200, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>北京</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body style="min-width:1200px;overflow-x:auto;">
@@ -27,8 +27,9 @@
         </div>
     </nav>
 
-    <div class="slider">
-        <div class="slide-container">
+    <!-- 轮播图固定尺寸 -->
+    <div class="slider" style="width:1200px;height:450px;margin:0 auto;">
+        <div class="slide-container">
             <img src="z4.jpg" alt="首页的图片">
         </div>
         <div class="slider-text">
@@ -37,7 +38,14 @@
         </div>
     </div>
 
-    <main class="container">
+    <!-- 主要内容容器固定尺寸 -->
+    <main class="container" style="width:1200px;margin:0 auto;">
+        <!-- 景点网格改为固定三列 -->
+        <div class="attractions-grid" style="
+            grid-template-columns: repeat(3, 380px);
+            gap: 20px;
+            width:1200px;
+            overflow:hidden;">
         <section class="highlights">
             <h2>主要景点</h2>
         </div>
@@ -127,7 +135,12 @@
                 <h2>特色小吃</h2>
             </div>
     
-            <section class="featured-food">
+            <!-- 特色小吃固定三列 -->
+            <section class="featured-food" style="
+                grid-template-columns: repeat(3, 380px);
+                gap: 20px;
+                width:1200px;
+                overflow:hidden;">
                 <div class="food-card">
                     <div class="food-image">
                         <img src="z11.jpg" alt="">
@@ -176,7 +189,12 @@
     
             <section class="food-streets">
                 <h2>美食街区推荐</h2>
-                <div class="street-grid">
+                <!-- 美食街区固定双列 -->
+                <div class="street-grid" style="
+                    grid-template-columns: repeat(2, 580px);
+                    gap: 40px;
+                    width:1200px;
+                    overflow:hidden;">
                     <div class="street-card">
                         <img src="z32.jpg" alt="">
                         <div class="street-info">
@@ -195,7 +213,8 @@
             </section>
         </main>
 
-    <footer>
+    <!-- 页脚固定尺寸 -->
+    <footer style="width:1200px;margin:0 auto;">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
