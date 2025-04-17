@@ -1,3 +1,29 @@
+body {
+    min-width: 1200px !important;
+    overflow-x: auto !important;
+}
+
+.container, .navbar, .slider, footer {
+    width: 1200px !important;
+    margin: 0 auto !important;
+}
+
+.attraction-card img, .food-image img, .street-card img {
+    width: 100% !important;
+    height: 200px !important;
+    object-fit: cover !important;
+}
+
+.flex-container {
+    flex-wrap: nowrap !important;
+}
+
+/* 固定文本尺寸 */
+h1 { font-size: 24px !important; }
+h2 { font-size: 20px !important; }
+h3 { font-size: 18px !important; }
+p  { font-size: 14px !important; }
+
 .hero {
     height: 600px;
     background-image: url('nanjing_004.jpg');
@@ -235,10 +261,10 @@
 }
 
 .attractions-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-bottom: 4rem;
+    grid-template-columns: repeat(3, 380px) !important;
+    gap: 20px !important;
+    width: 1200px !important;
+    overflow: hidden !important;
 }
 
 .attraction-card {
@@ -311,12 +337,7 @@
 }
 
 @media (max-width: 768px) {
-    .attractions-filter {
-        flex-wrap: wrap;
-    }
-    .filter-btn {
-        width: calc(50% - 0.5rem);
-    }
+    /* 删除所有移动端样式 */
 }
 
 
@@ -348,10 +369,8 @@
 }
 
 .featured-food {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-bottom: 4rem;
+    grid-template-columns: repeat(3, 380px) !important;
+    gap: 20px !important;
 }
 
 .food-card {
@@ -420,9 +439,8 @@
 }
 
 .street-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(2, 580px) !important;
+    gap: 40px !important;
 }
 
 .street-card {
