@@ -137,19 +137,19 @@
 }
 
 .season-card.spring {
-    background-image: url('../img/z35.jpg');
+    background-image: url('z35.jpg');
 }
 
 .season-card.summer {
-    background-image: url('../img/z36.jpg');
+    background-image: url('z36.jpg');
 }
 
 .season-card.autumn {
-    background-image: url('../img/b23.jpg');
+    background-image: url('b23.jpg');
 }
 
 .season-card.winter {
-    background-image: url('../img/b24.jpg');
+    background-image: url('b24.jpg');
 }
 
 .season-content {
