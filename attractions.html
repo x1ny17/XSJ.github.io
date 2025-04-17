@@ -7,22 +7,7 @@
     <meta name="viewport" content="width=1200, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>北京</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="attractions.css"
-    <style>
-        /* 强制布局核心样式 */
-        body {
-            min-width: 1200px;
-            overflow-x: auto;
-            zoom: 1;
-        }
-        .navbar, .page-header, main.container, footer .container {
-            width: 1200px !important;
-            margin: 0 auto;
-            left: 0;
-            right: 0;
-            transform: none !important;
-        }
-    </style>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body style="min-width:1200px;overflow-x:auto;">
@@ -42,12 +27,33 @@
         </div>
     </nav>
 
-    <header class="page-header">
-        <div class="container">
-            <h1>北京景点介绍</h1>
-            <p>探索千年古都的人文与自然之美</p>
+    <!-- 轮播图固定尺寸 -->
+    <div class="slider" style="width:1200px;height:450px;margin:0 auto;">
+         <div class="slide-container">
+            <img src="b7.jpg" alt="">
         </div>
-    </header>
+        <header class="page-header">
+            <div class="container">
+                <h1>北京景点介绍</h1>
+                <p>探索千年古都的人文与自然之美</p>
+            </div>
+        </header>
+    </div>
+
+
+    <!-- 主要内容容器固定尺寸 -->
+    <main class="container" style="width:1200px;margin:0 auto;">
+        <!-- 景点网格改为固定三列 -->
+        <div class="attractions-grid" style="
+            grid-template-columns: repeat(3, 380px);
+            gap: 20px;
+            width:1200px;
+            overflow:hidden;">
+        </div>
+        
+        <section class="highlights">
+            <h2>诗词文学中的北京</h2>
+        </section>
 
 
     <!-- 主要内容容器固定尺寸 -->
