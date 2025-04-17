@@ -40,10 +40,19 @@
         </header>
     </div>
 
-    <main class="container">
+    <!-- 主要内容容器固定尺寸 -->
+    <main class="container" style="width:1200px;margin:0 auto;">
+        <!-- 景点网格改为固定三列 -->
+        <div class="attractions-grid" style="
+            grid-template-columns: repeat(3, 380px);
+            gap: 20px;
+            width:1200px;
+            overflow:hidden;">
+        </div>
+        
         <section class="highlights">
             <h2>诗词文学中的北京</h2>
-        </div>
+        </section>
     
         <div class="attractions-grid">
             <div class="attraction-card historical">
@@ -190,7 +199,8 @@
         </div>
     </main>
 
-    <footer>
+    <!-- 页脚固定尺寸 -->
+    <footer style="width:1200px;margin:0 auto;">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
