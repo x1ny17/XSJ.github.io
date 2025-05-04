@@ -1,5 +1,5 @@
 .page-header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/yn40.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('yn40.png');
     background-size: cover;
     background-position: center;
     color: white;
