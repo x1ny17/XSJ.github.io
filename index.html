@@ -5,38 +5,51 @@
     <meta charset="UTF-8">
     <!-- 锁定视口禁止缩放 -->
     <meta name="viewport" content="width=1200, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>北京</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="index.css">
+    <title>首页</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/index zo.css">
+    <style>
+        /* 强制布局核心样式 */
+        body {
+            min-width: 1200px;
+            overflow-x: auto;
+            zoom: 1;
+        }
+        .navbar, .page-header, main.container, footer .container {
+            width: 1200px !important;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            transform: none !important;
+        }
+        </style>
 </head>
 
 <body style="min-width:1200px;overflow-x:auto;">
     <!-- 导航栏固定尺寸 -->
-    <nav class="navbar" style="width:1200px;margin:0 auto; margin-bottom:0 !important">
+    <nav class="navbar" style="width:1200px;margin:0 auto;">
         <div class="container">
             <div class="logo">
-                <h1>寻诗记——北京</h1>
+                <h1>寻诗记——总览</h1>
             </div>
             <ul class="nav-links">
                 <li><a href="index.html" class="active">首页</a></li>
-                <li><a href="attractions.html">景点介绍</a></li>
-                <li><a href="travel.html">交通住宿</a></li>
-                <li><a href="guide.html">旅游攻略</a></li>
-                <li><a href="gift.html">文创产品</a></li>
+                <li><a>请选择想去的地点吧~</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- 轮播图固定尺寸 -->
-    <div class="slider" style="width:1200px;height:600px;margin:0 auto; margin-top:0 !important">
-        <div class="slide-container">
-            <img src="z4.jpg" alt="首页的图片">
-        </div>
-        <div class="slider-text">
-            <h2>北京—感受千年古都的历史魅力</h2>
-            <h2>“前不见古人，后不见来者。念天地之悠悠，独怆然而涕下。”</p>
-        </div>
+    <div class="slider" style="width:1200px;height:450px;margin:0 auto;">
+        
+        <header class="page-header">
+            <div class="container">
+                <h1>欢迎开启寻诗之旅</h1>
+            </div>
+        </header>
     </div>
+
+
 
     <!-- 主要内容容器固定尺寸 -->
     <main class="container" style="width:1200px;margin:0 auto;">
@@ -48,171 +61,38 @@
             overflow:hidden;">
         </div>
         <section class="highlights">
-            <h2>主要景点</h2>
+            <h2>让诗词“活”在脚下，让旅行“浸”入千年</h2>
         </div>
 
         <div class="attractions-grid">
             <div class="attraction-card historical">
-                <img src="z9.jpg" alt="">
+                <img src="../img/z4.jpg" alt="">
                 <div class="card-content">
-                    <h3>天安门广场</h3>
-                    <span class="tag">历史古迹</span>
-                    <p>天安门广场：位于北京中心，是中国的象征，世界上最大的城市中心广场。</p>
-                    <div class="card-info">
-                        <span>开放时间：全天开放</span>
-                        <span>门票：免费</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="attraction-card natural">
-                <img src="z13.jpg" alt="">
-                <div class="card-content">
-                    <h3>北京故宫</h3>
-                    <span class="tag">人文景观</span>
-                    <p>北京故宫：明清皇家宫殿，世界文化遗产，现存规模最大木质结构古建筑群。</p>
-                    <div class="card-info">
-                        <span>开放时间：全天开放</span>
-                        <span>门票：￥60</span>
-                    </div>
+                    <h3>北京</h3>
+                    <p>感受千年古都的历史魅力</p>
+                    <li><a href="index.html">>>查看详情</a></li>
                 </div>
             </div>
 
             <div class="attraction-card historical">
-                <img src="z14.jpg" alt="">
+                <img src="../img/yn1.png" alt="">
                 <div class="card-content">
-                    <h3>圆明园</h3>
-                    <span class="tag">历史古迹</span>
-                    <p>北京圆明园：清代皇家园林，遭劫后成遗址，誉为“万园之园”，国家5A景区。</p>
-                    <div class="card-info">
-                        <span>开放时间：7:00-21:00</span>
-                        <span>门票：￥25</span>
-                    </div>
+                    <h3>云南</h3>
+                    <p>领略彩云之南的绮丽风光与民族风情</p>
+                    <li><a href="index 2.html">>>查看详情</a></li>
                 </div>
             </div>
 
-            <div class="attraction-card cultural">
-                <img src="z2.jpg" alt="">
+            <div class="attraction-card historical">
+                <img src="../img/wc50.jpg" alt="">
                 <div class="card-content">
-                    <h3>天坛公园</h3>
-                    <span class="tag">人文景观</span>
-                    <p>北京天坛：明清祭天祈谷地，古建筑群宏大，中国现存最大祭祀性建筑群。</p>
-                    <div class="card-info">
-                        <span>开放时间：6:00-17:30</span>
-                        <span>门票：￥45</span>
-                    </div>
+                    <h3>敬请期待</h3>
+                    <p></p>
                 </div>
             </div>
             
-            <div class="attraction-card cultural">
-                <img src="z3.jpg" alt="">
-                <div class="card-content">
-                    <h3>颐和园</h3>
-                    <span class="tag">历史古迹</span>
-                    <p>北京颐和园：皇家园林，以昆明湖、万寿山为基础，中国园林艺术典范。</p>
-                    <div class="card-info">
-                        <span>开放时间：7:00-17:00</span>
-                        <span>门票：免费</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="attraction-card cultural">
-                <img src="nc.png" alt="">
-                <div class="card-content">
-                    <h3>鸟巢</h3>
-                    <span class="tag">现代建筑</span>
-                    <p>2008年北京奥运会主体育场、2022年北京冬奥会和冬残奥会开闭幕式场馆 ，全球首个“双奥开闭幕式场馆”。</p>
-                    <div class="card-info">
-                        <span>开放时间：10：00-22：00</span>
-                        <span>门票：成人普通票￥96起</span>
-                    </div>
-                </div>
-            </div>
         </div>
-    
-        <main class="container">
-            <section class="highlights">
-                <h2>特色小吃</h2>
-            </div>
-    
-            <!-- 特色小吃固定三列 -->
-            <section class="featured-food" style="
-                grid-template-columns: repeat(3, 380px);
-                gap: 20px;
-                width:1200px;
-                overflow:hidden;">
-                <div class="food-card">
-                    <div class="food-image">
-                        <img src="z11.jpg" alt="">
-                        <span class="food-tag">必吃</span>
-                    </div>
-                    <div class="food-info">
-                        <h3>北京烤鸭</h3>
-                        <p class="food-desc">北京最著名的特产之一，肉质鲜美</p>
-                        <div class="food-meta">
-                            <span>推荐指数：⭐⭐⭐⭐⭐</span>
-                            <span>价格：￥30-50/份</span>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="food-card">
-                    <div class="food-image">
-                        <img src="z6.png" alt="">
-                        <span class="food-tag">地道</span>
-                    </div>
-                    <div class="food-info">
-                        <h3>北京炸酱面</h3>
-                        <p class="food-desc">北京人气小吃，汤鲜味美，温暖滋补</p>
-                        <div class="food-meta">
-                            <span>推荐指数：⭐⭐⭐⭐⭐</span>
-                            <span>价格：￥15-25/碗</span>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="food-card">
-                    <div class="food-image">
-                        <img src="z15.jpg" alt="">
-                        <span class="food-tag">热门</span>
-                    </div>
-                    <div class="food-info">
-                        <h3>驴打滚</h3>
-                        <p class="food-desc">外酥内嫩，馅料十足，是北京人喜爱的早点</p>
-                        <div class="food-meta">
-                            <span>推荐指数：⭐⭐⭐⭐</span>
-                            <span>价格：￥10-15/份</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-    
-            <section class="food-streets">
-                <h2>美食街区推荐</h2>
-                <!-- 美食街区固定双列 -->
-                <div class="street-grid" style="
-                    grid-template-columns: repeat(2, 580px);
-                    gap: 40px;
-                    width:1200px;
-                    overflow:hidden;">
-                    <div class="street-card">
-                        <img src="z32.jpg" alt="">
-                        <div class="street-info">
-                            <h3>五道口美食街</h3>
-                            <p>汇集各类北京特色小吃，是品尝地道美食的首选之地</p>
-                        </div>
-                    </div>
-                    <div class="street-card">
-                        <img src="z31.jpg" alt="">
-                        <div class="street-info">
-                            <h3>前门美食街</h3>
-                            <p>百年老街，各类名小吃云集，是北京最具人气的美食街</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
+    </main>
 
     <!-- 页脚固定尺寸 -->
     <footer style="width:1200px;margin:0 auto;">
